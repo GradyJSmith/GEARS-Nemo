@@ -22,7 +22,7 @@ bool debug = false;
 #define PROFILE_COUNT     3
 
 // WiFi AP credentials — connect to this hotspot to view data
-const char* AP_SSID     = "FloatLogger";
+const char* AP_SSID     = "GEARSNemo_Data";
 const char* AP_PASSWORD = "divedata";   // min 8 chars, or set to "" for open
 
 WebServer server(80);
