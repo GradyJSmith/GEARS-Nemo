@@ -322,7 +322,7 @@ void setup() {
   }
 
   // Shut WiFi down before entering water
-  stopWiFi();
+  //stopWiFi();
   Serial.println("MISSION INITIATED");
 }
 
@@ -336,7 +336,7 @@ void loop() {
     Serial.println("All profiles complete. Starting post-mission WiFi...");
     startWiFi();
     serveUntilDisconnect(300); // serve for up to 5 minutes
-    stopWiFi();
+    //stopWiFi();
     Serial.println("Data served. Powering down webserver. Reset to run again.");
     // Sit idle — reset the board to run another mission
     while (true) {
