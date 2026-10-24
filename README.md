@@ -1,4 +1,4 @@
-# GEARS Squid Software
+# GEARS Nemo Software
 
 This software is intended for use on the ESP32-WROOM-32 board in the GEARS, Inc. Nemo float. Currently, **all rights are reserved** by Grady Smith (GradyJSmith).
 
