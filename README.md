@@ -7,6 +7,7 @@ This software is intended for use on the ESP32-WROOM-32 board in the GEARS, Inc.
 ## Hardware List
 
 *As far as I know, this is a complete hardware list minus the acrylic tube, 3D-printed parts, and syringe.*
+*3d printed parts are coming to printables soon.*
 
 - [Linear Actuator](https://www.amazon.com/dp/B0CQV3WSFB) — 1x  
 - [ESP32 and Breakout Board](https://www.amazon.com/AITRIP-ESP-WROOM-32-Bluetooth-ESP32-DevKitC-32-Development/dp/B0DPS44HCQ/) — 1x  
@@ -27,17 +28,34 @@ Full wiring diagrams are located in the `Wiring Diagrams` folder.
 
 ## Setup
 
-1. Download and install [Arduino IDE](https://www.arduino.cc/en/software/).  
-2. Install the ESP32 board package by Espressif Systems using the Board Manager.  
-3. Plug your ESP32 into your computer.  
-4. Open Arduino IDE and select **ESP32 Dev Kit** from the board selection dropdown.  
-5. Flash the code to the board.  
+### CLion
+1. Install [CLion by Jetbrains](https://www.jetbrains.com/clion/).
+1. Make sure the PlatformIO plugin is installed.
+2. Clone the GitHub repo.
+3. Open the project in CLion.
+4. If you want the latest version just click build. If you want one of the other scripts use:
+```bash
+pio run -e SCRIPTNAME
+```
+5. Plug your ESP32 into your computer.
+6. Click run. This will flash mainV2 onto the ESP32.
+
+### Arduino IDE
+1. Clone Repo
+2. Remove platformio.ini file.
+3. Rename each script with the .ino extension instead of .cpp.
+4. Remove the #include <Arduino.h> line at the top of each script.
+5. Download and install [Arduino IDE](https://www.arduino.cc/en/software/).  
+6. Install the ESP32 board package by Espressif Systems using the Board Manager.  
+7. Plug your ESP32 into your computer.  
+8. Open Arduino IDE and select **ESP32 Dev Kit** from the board selection dropdown.  
+9. Flash the code to the board.  
 
 ---
 
 ## Usage
 
-After flashing the initial sketch, usage is straightforward:
+After flashing the initial build, usage is straightforward:
 
 - View data through the **Serial Monitor** when connected via USB, or  
 - Access the ESP32 web server in your browser at:  
