@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <LittleFS.h>
 
 // PIN DEFINITIONS

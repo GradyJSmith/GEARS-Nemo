@@ -1,4 +1,5 @@
-/* 
+#include <Arduino.h>
+/*
  * ESP32 Submersible Pressure Sensor (0-5m) 
  * Calibrated for feet with high-resolution averaging
  */

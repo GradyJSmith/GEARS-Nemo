@@ -1,4 +1,6 @@
 // PIN DEFINITIONS
+#include <Arduino.h>
+
 #define FWD_PIN 25   // Relay 1 -> OONO FWD (Expel water)
 #define REV_PIN 26   // Relay 2 -> OONO REV (Suck water)
 

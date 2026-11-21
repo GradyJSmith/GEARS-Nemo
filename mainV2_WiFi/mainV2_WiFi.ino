@@ -1,6 +1,7 @@
 #include <LittleFS.h>
 #include <WiFi.h>
 #include <WebServer.h>
+#include <Arduino.h>
 
 // PIN DEFINITIONS
 #define FWD_PIN           25   // Relay 1 -> OONO FWD (Expel/Rise)
